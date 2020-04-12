@@ -27,7 +27,7 @@ Preview: 👉 <a href="#">IMDB Codenation</a>
 - [ ] Página Detalhes do título
 - [ ] Página de login
 - [ ] Página de cadastro
-- [ ] Menu personalizado
+- [ ] Menu do usuário
 
 <h2>Layout</h2>
 
