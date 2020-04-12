@@ -1,0 +1,437 @@
+/*Importar o Font Awesome para trazer os vetores*/
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+/*Importar o Google Fonts para trazer a fonte Mont Serrat*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+    /*Define a fonte padrão do corpo da aplicação*/
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+/*Define as características das classes definidas como container*/
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+
+/*Define as características das classes definidas como hero*/
+.hero {
+    background-attachment: fixed;
+    /*Imagem de fundo do título destaque (título principal)*/
+	background-image: url(images/capa-madmax2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+	justify-content: space-between;
+	padding: 20px;
+	position: relative;
+	width: 100%;
+}
+
+/*Define o comportamento das classes hero ao rolar a tela*/
+.hero:after {
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 212, 255, 0) 75%
+	);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/*Define o comportamento da classe hero-menu*/
+.hero-menu {
+	z-index: 2;
+	display: flex;
+}
+
+/*Define o comportamento da classe hero-menu container*/
+.hero-menu .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Define o comportamento da classe hero-logo*/
+.hero-logo {
+	display: inline-block;
+}
+
+/*Define o comportamento da classe hero-lista*/
+.hero-lista {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*Define o comportamento da classe hero-lista-item*/
+.hero-lista-item {
+	margin: 0 25px;
+}
+
+/*Define a cor do texto do menu da classe hero-lista-item */
+.hero-lista-item a,
+.catalogo-menu-lista-item a {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Define o comportamento da classe hero-lista-item ao passar o cursor por cima*/
+.hero-lista-item a:hover {
+	color: #e4bb23;
+}
+
+/*Define o comportamento da classe hero-usuario*/
+.hero-usuario {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/*Define o comportamento da classe hero-usuario-foto*/
+.hero-usuario-foto {
+	border-radius: 100%;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	height: 45px;
+	margin-right: 15px;
+	overflow: hidden;
+	width: 45px;
+}
+
+/*Define as características da classe hero-usuario-nome*/
+.hero-usuario-nome {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+/*Define as características da foto da classe hero-usuario-foto*/
+.hero-usuario-foto img {
+	width: 100%;
+	height: auto;
+}
+
+/*Define o painel principal (título destaque)*/
+
+.hero-conteudo {
+	width: 100%;
+}
+
+.hero-conteudo .container {
+	position: relative;
+	z-index: 2;
+}
+
+/*Define as características do nome do título destaque*/
+.hero-titulo {
+	color: #fff;
+	font-size: 6.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/*Define as características do nome do gênero do título (TODOS)*/
+.hero-genero {
+	display: flex;
+	margin: 15px 0 30px;
+	font-size: 13px;
+}
+
+/*Define as características das classificações do  título (gênero do título)*/
+.hero-genero-item {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 15px;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Define o comportamento ao passar o cursor sobre a classe hero-genero-item*/
+.hero-genero-item:hover {
+	color: #e4bb23;
+}
+
+/*Define a cor do botão para assistir o trailer do título principal*/
+.hero-botao {
+	display: inline-block;
+	padding: 15px 50px;
+	color: #000;
+	font-size: 1.5em;
+	text-decoration: none;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Define as características do botão*/
+.hero-botao i {
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+
+/*Define a cor do botão "Assistir trailer"*/
+.hero-botao:hover {
+	background-color: #bc9a1d;
+}
+
+/*Define as características do texto sobre as informações de lançamento do filme*/
+.hero-informacao {
+	padding: 20px 0;
+	font-size: 1.4em;
+	color: #fff;
+}
+
+/*Comportamento do texto ao passar o cursor sobre ele*/
+.hero-informacao p:last-child {
+	color: #bc9a1d;
+}
+
+/*Define as características da classe catalogo*/
+.catalogo {
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+/*Define as características da classe catalogo-menu*/
+.catalogo-menu {
+	width: 100%;
+}
+
+/*Define as características da classe catalogo-menu-lista*/
+.catalogo-menu-lista {
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/*Define as características da classe catalogo-menu-lista-item*/
+.catalogo-menu-lista-item {
+	margin: 0 20px;
+}
+
+/*Define as características da classe catalogo-menu-lista-item no elemento <a>*/
+.catalogo-menu-lista-item a {
+	color: #e4bb23;
+	display: inline-block;
+	padding: 25px 0;
+}
+
+/*Comportamento da classe catalogo-menu-lista-item no elemento <a> quando passar o cursor sobre*/
+.catalogo-menu-lista-item a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+/*Define as características da classe catalogo-filmes-lista*/
+.catalogo-filmes-lista {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	width: 100%;
+}
+
+/*Define as características da classe catalogo-filmes-lista-item*/
+.catalogo-filmes-lista-item {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 24%;
+}
+
+/*Define as características do ambiente do título*/
+.filme-poster {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+/*Define as características da imagem do título*/
+.filme-poster img {
+	width: 100%;
+	height: auto;
+}
+
+/*Define as características das informações do título*/
+.filme-poster-info {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	padding: 80px 20px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+/*Define a imagem/poster como opaco ao passar o cursor sobre*/
+.catalogo-filmes-lista-item:hover .filme-poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*Define a cor das letras do texto que esta dentro da imagem do poster do título*/
+.filme-poster-info h3 {
+	color: #e4bb23;
+	font-size: 2em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+/*Define a cor do play ao passar o cursor sobre a imagem mas não sobre o play*/
+.filme-poster-link {
+	color: #fff;
+	font-size: 5em;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Define a cor do play ao passar o cursor sobre o play*/
+.filme-poster-link:hover {
+	color: #e4bb23;
+}
+
+/*Define o tamanho da caixa imediatamente abaixo do poster do título*/
+.filme-sinopse {
+	padding: 10px;
+	width: 100%;
+}
+
+/*Define as caraterísticas do texto que nomeia o título dentro da xaixa filme-sinopse*/
+.filme-sinopse-titulo {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/*Define as caraterísticas do texto que nomeia os generos dentro da xaixa filme-sinopse*/
+.sinopse-genero {
+	margin: 10px 0;
+	display: flex;
+}
+
+.sinopse-genero-item {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #e4bb23;
+}
+
+/*Define as caraterísticas do texto de generos ao passar o cursor sobre*/
+.sinopse-genero-item:hover {
+	text-decoration: underline;
+}
+
+/*Define as caraterísticas do texto de nota do título*/
+.filme-nota {
+	margin: 0;
+	align-items: center;
+	display: flex;
+	font-size: 2em;
+	font-weight: bold;
+	justify-content: space-between;
+}
+
+.filme-nota i {
+	color: #ccc;
+	cursor: pointer;
+}
+
+/*Define a cor do coração ao passar o cursor sobre*/
+.filme-nota i:hover {
+	color: #e74c3c;
+}
+
+/*Define as características da classe rodapé*/
+
+.rodape {
+	background-color: #fff;
+	color: #bababa;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.rodape .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rodape-lista {
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.rodape-lista-item {
+	margin: 0 20px;
+}
+
+.rodape-lista-item:last-child {
+	margin-right: 0;
+}
+
+.rodape-lista-item a {
+	font-size: 2.5em;
+	color: #bababa;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Define o comportamento ao passar o cursor sobre o ícone da rede social*/
+
+.icone-twitter a:hover {
+	color: #55acee;
+}
+
+.icone-facebook a:hover {
+	color: #3b5998;
+}
+
+.icone-instagram a:hover {
+	color: #e95950;
+}
