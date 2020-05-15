@@ -1,0 +1,17 @@
+{
+  "name": "mod3-calc-terminal",
+  "version": "1.0.0",
+  "description": "pacote calculadora",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Raphaella Bartoncello",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
