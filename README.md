@@ -1,4 +1,4 @@
-<h1><img src="./img/codenation.svg" height="45" >AceleraDev - React</h1>
+<h1>AceleraDev - React <img src="./img/codenation.svg" height="45"> </h1>
 
 <h2>Aplicações</h2>
 
